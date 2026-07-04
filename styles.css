@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #020617;
+    transition: background 1.8s ease-in-out, color 1.2s ease-in-out;
+}
+
+.font-cursive {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Base Background Moods */
+.dynamic-bg {
+    background: #020617;
+}
+
+.bg-phase-sunrise {
+    background: linear-gradient(180deg, #020617 0%, #1e1b4b 40%, #581c87 75%, #fef08a 100%) !important;
+}
+
+.bg-phase-blossom {
+    background: linear-gradient(180deg, #fef08a 0%, #fce7f3 50%, #fae8ff 100%) !important;
+}
+
+.bg-phase-final {
+    background: #ffffff !important;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Custom CSS Soft Animations */
+.pulse-slow {
+    animation: heartPulse 3s infinite ease-in-out;
+}
+
+.heartbeat {
+    animation: rapidHeartbeat 1.4s infinite ease-in-out;
+}
+
+.glow-card {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+    transition: all 0.4s ease;
+}
+.glow-card:hover {
+    box-shadow: 0 0 25px rgba(253, 244, 180, 0.25);
+    border-color: rgba(253, 244, 180, 0.4);
+}
+
+@keyframes heartPulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(244,63,94,0.2)); }
+    50% { transform: scale(1.06); filter: drop-shadow(0 0 12px rgba(244,63,94,0.5)); }
+}
+
+@keyframes rapidHeartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.15); }
+    40% { transform: scale(1.05); }
+    60% { transform: scale(1.2); }
+}
